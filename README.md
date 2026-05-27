@@ -204,16 +204,3 @@ Para remover os recursos criados na AWS:
 cd terraform
 terraform destroy
 ```
-
-## Cuidados antes de commitar
-
-Nao commite arquivos de estado ou artefatos locais:
-
-- `terraform.tfstate`
-- `terraform.tfstate.backup`
-- `.terraform/`
-- `lambda.zip`
-- `__pycache__/`
-- arquivos `.env` ou `.tfvars` com valores sensiveis
-
-Esses arquivos ja estao cobertos pelo `.gitignore` deste projeto.
